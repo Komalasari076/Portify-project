@@ -1,7 +1,15 @@
+import Navbar from "./components/Header/Navbar";
+import AboutSection from "./components/Main/AboutSection";
+import CallToAction from "./components/Main/CallToAction";
+import HeroSection from "./components/Main/HeroSection";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Navbar />
+      <HeroSection />
+      <AboutSection />
+      <CallToAction />
     </>
   );
 }
