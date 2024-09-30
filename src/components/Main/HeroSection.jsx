@@ -27,7 +27,7 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="w-full h-96 bg-slate-400">
+      <div className="w-full h-96">
         <span></span>
       </div>
     </div>
