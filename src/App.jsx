@@ -8,7 +8,7 @@ import Panduan from "./components/Main/Panduan";
 function App() {
   return (
     <div className="box-border md:container md:mx-auto">
-      <Navbar />
+      {/* <Navbar />
 
       <HeroSection />
 
@@ -16,7 +16,9 @@ function App() {
 
       <CallToAction />
 
-      <Footer />
+      <Footer /> */}
+
+      <Panduan/>
     </div>
   );
 }
