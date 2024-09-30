@@ -13,6 +13,9 @@ function Navbar() {
           About
         </li>
         <li className="mr-10 hover:text-sky-800 transition duration-300 ease-in-out">
+          Project
+        </li>
+        <li className="mr-10 hover:text-sky-800 transition duration-300 ease-in-out">
           Syarat
         </li>
         <li className="hover:text-sky-800 transition duration-300 ease-in-out">

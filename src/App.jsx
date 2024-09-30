@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
 import AboutSection from "./components/Main/AboutSection";
 import CallToAction from "./components/Main/CallToAction";
@@ -14,6 +15,8 @@ function App() {
       <AboutSection />
 
       <CallToAction />
+
+      <Footer />
     </div>
   );
 }
