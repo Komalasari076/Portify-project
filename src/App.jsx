@@ -7,11 +7,7 @@ import Panduan from "./components/Main/Panduan";
 function App() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <CallToAction />
-      <Panduan/>
+      <Navbar/>
     </>
   );
 }
