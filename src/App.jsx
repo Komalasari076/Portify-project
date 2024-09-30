@@ -7,11 +7,13 @@ import Panduan from "./components/Main/Panduan";
 function App() {
   return (
     <div className="box-border md:container md:mx-auto">
-      <Navbar/>
+      <Navbar />
 
-      <HeroSection/>
+      <HeroSection />
 
-      <AboutSection/>
+      <AboutSection />
+
+      <CallToAction />
     </div>
   );
 }
