@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <div className="flex justify-between items-center text-lg font-semibold p-5 border-b-2 border-slate-200">
+    <div className="flex justify-between items-center text-lg font-bold p-5 border-b-2 border-slate-200">
       <div>
         <h1>Portify</h1>
       </div>
