@@ -9,6 +9,7 @@ import HeroSection from "./components/Main/HeroSection";
 import Panduan from "./components/Main/Panduan";
 import ProjectList from "./components/Main/ProjectList";
 import ProjectDetail from "./components/Main/ProjectDetail";
+import Dashboard from "./components/Main/Dashboard";
 
 function App() {
   return (
@@ -29,10 +30,12 @@ function App() {
 
       <Register /> */}
 
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<ProjectList />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
-      </Routes>
+      </Routes> */}
+
+      <Dashboard/>
     </div>
   );
 }
