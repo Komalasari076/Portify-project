@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <div className="flex justify-between items-center text-lg font-bold p-5 border-b-2 border-slate-200">
@@ -7,25 +9,25 @@ function Navbar() {
 
       <div className="flex list-none ">
         <li className="mr-10 hover:text-sky-800 transition duration-300 ease-in-out">
-          Home
+          <Link to="/">Home</Link>
         </li>
+
         <li className="mr-10 hover:text-sky-800 transition duration-300 ease-in-out">
-          About
+          <Link to="/project">Projects</Link>
         </li>
-        <li className="mr-10 hover:text-sky-800 transition duration-300 ease-in-out">
-          Project
-        </li>
-        <li className="mr-10 hover:text-sky-800 transition duration-300 ease-in-out">
-          Syarat
-        </li>
+
         <li className="hover:text-sky-800 transition duration-300 ease-in-out">
-          Panduan
+          <Link to="/panduan">Panduan</Link>
         </li>
+
+        {/* <li className="mr-10 hover:text-sky-800 transition duration-300 ease-in-out">
+          Syarat
+        </li> */}
       </div>
 
       <div>
         <h1 className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">
-          Login
+          <Link to="/login">Login</Link>
         </h1>
       </div>
     </div>
