@@ -9,6 +9,7 @@ import Dashboard from "./components/Main/Dashboard";
 import HomePage from "./components/HomePage";
 import Persyaratan from "./components/Main/Persyaratan";
 import Register from "./components/Header/Register";
+import Pengajuan from "./components/Main/Pengajuan";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/panduan" element={<Panduan />} />
         <Route path="/persyaratan" element={<Persyaratan />} /> */}
         <Route path="/" element={<Dashboard />} />
+        <Route path="/pengajuan" element={<Pengajuan />} />
       </Routes>
 
       {/* <Footer /> */}
