@@ -6,7 +6,6 @@ import Panduan from "./components/Main/Panduan";
 import ProjectList from "./components/Main/ProjectList";
 import ProjectDetail from "./components/Main/ProjectDetail";
 import Dashboard from "./components/Main/Dashboard";
-import AddProjectForm from "./components/Main/AddProject";
 import HomePage from "./components/Main/HomePage";
 
 function App() {

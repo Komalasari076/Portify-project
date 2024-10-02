@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 function Navbar() {
   return (
     <div className="flex justify-between items-center text-lg font-bold p-5 border-b-2 border-slate-200">
-      <div>
-        <h1>Portify</h1>
+      <div className="flex">
+        <img src={logo} alt="" width={40} />
+        <h1 className="text-2xl">Portify</h1>
       </div>
 
       <div className="flex list-none ">
