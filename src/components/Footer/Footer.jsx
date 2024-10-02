@@ -1,21 +1,20 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <div className="">
       <div className="flex justify-center gap-10 list-none font-medium p-5 border-t-2 border-slate-200">
         <li className=" hover:text-sky-800 transition duration-300 ease-in-out">
-          Home
+          <Link to="/">Home</Link>
         </li>
         <li className=" hover:text-sky-800 transition duration-300 ease-in-out">
-          About
-        </li>
-        <li className=" hover:text-sky-800 transition duration-300 ease-in-out">
-          Project
-        </li>
-        <li className=" hover:text-sky-800 transition duration-300 ease-in-out">
-          Syarat
+          <Link to="/project">Projects</Link>
         </li>
         <li className="hover:text-sky-800 transition duration-300 ease-in-out">
-          Panduan
+          <Link to="/panduan">Panduan</Link>
+        </li>
+        <li className=" hover:text-sky-800 transition duration-300 ease-in-out">
+          <Link to="/persyaratan">Persyaratan</Link>
         </li>
       </div>
 

@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import portofolio from "../../assets/Desain tanpa judul.png";
 
 function CallToAction() {
   return (
-    <div className="flex justify-between items-center font-medium text-base p-5 gap-x-32 h-96">
-      <div>
+    <div className="flex justify-between items-center font-medium text-base px-5 py-10 gap-x-32 min-h-full">
+      <div className="w-3/5">
         <h1 className="text-lg">Bantu Usaha Lokal dan Bangun Portofoliomu!</h1>
         <br />
         <p className="mb-6">
@@ -16,11 +17,11 @@ function CallToAction() {
         </p>
 
         <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">
-          Lihat Proyek
+          <Link to="/project">Lihat Proyek</Link>
         </button>
       </div>
 
-      <div className="w-full">
+      <div className="w-2/5">
         <img src={portofolio} alt="Portfolio" />
       </div>
     </div>

@@ -11,7 +11,7 @@ function Panduan() {
             onClick={() => setActive("talent")}
             className={` mr-10 ${
               active === "talent"
-                ? "border-b-2 border-indigo-500/100"
+                ? "border-b-2 border-sky-800"
                 : "border-gray-300"
             }`}
           >
@@ -22,7 +22,7 @@ function Panduan() {
             onClick={() => setActive("onwer")}
             className={` ${
               active === "onwer"
-                ? "border-b-2 border-indigo-500/100"
+                ? "border-b-2 border-sky-800"
                 : "border-gray-300"
             }`}
           >

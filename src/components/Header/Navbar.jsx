@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="flex justify-between items-center text-lg font-bold p-5 border-b-2 border-slate-200">
       <div className="flex">
-        <img src={logo} alt="" width={40} />
+        <img src={logo} alt="Logo" width={40} />
         <h1 className="text-2xl">Portify</h1>
       </div>
 

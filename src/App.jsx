@@ -8,23 +8,25 @@ import ProjectDetail from "./components/Main/ProjectDetail";
 import Dashboard from "./components/Main/Dashboard";
 import HomePage from "./components/HomePage";
 import Persyaratan from "./components/Main/Persyaratan";
+import Register from "./components/Header/Register";
 
 function App() {
   return (
     <div className="box-border md:container md:mx-auto">
-      <Navbar />
+      {/* <Navbar /> */}
+
       <Routes>
+        {/* <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/project" element={<ProjectList />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/panduan" element={<Panduan />} />
-        <Route path="/persyaratan" element={<Persyaratan />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/persyaratan" element={<Persyaratan />} /> */}
+        <Route path="/" element={<Dashboard />} />
       </Routes>
 
-      <Footer />
-
-      {/* <Register /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
