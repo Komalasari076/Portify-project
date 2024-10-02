@@ -28,9 +28,9 @@ function Navbar() {
       </div>
 
       <div>
-        <h1 className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">
+        <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">
           <Link to="/login">Login</Link>
-        </h1>
+        </button>
       </div>
     </div>
   );

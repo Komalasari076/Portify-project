@@ -1,4 +1,6 @@
 import { useState } from "react";
+import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   const [active, setActive] = useState("talent");
@@ -14,20 +16,34 @@ function Dashboard() {
   ];
 
   return (
-    <div className="p-5">
-      <div className="flex justify-between">
-        <h1>Dashboard</h1>
+    <div className="font-medium px-5">
+      <div className="flex justify-between items-center gap-x-4 py-10 min-h-full">
+        <div className="flex">
+          <img src={logo} alt="Logo" width={40} />
+          <Link to="/">
+            <h1 className="text-2xl font-bold">Portify</h1>
+          </Link>
+        </div>
+
+        <h1 className="text-xl">Dashboard</h1>
+
         <div>
-          <button className="py-2 px-4 mx-2 rounded-lg bg-blue-500 text-white ">
-            Verifikasi
+          <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-sky-800 hover:text-white mr-2">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScTIyIPPDSCyXkfCLFoGh8DX5R0G4vORCavW_iSP4dUMCN1vg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Verifikasi
+            </a>
           </button>
-          <button className="py-2 px-4 mx-2 rounded-lg bg-blue-500 text-white">
+          <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-sky-800 hover:text-white mr-2">
             Ajukan project
           </button>
         </div>
       </div>
 
-      <div className="text-center my-20">
+      <div className="text-center my-16">
         <p>
           Di sini, kamu bisa melihat riwayat proyekmu, baik proyek yang sedang
           kamu kerjakan atau yang kamu ajukan ke orang lain. Jangan lupa untuk
@@ -41,7 +57,7 @@ function Dashboard() {
           onClick={() => setActive("talent")}
           className={` mr-10 ${
             active === "talent"
-              ? "border-b-2 border-indigo-500/100"
+              ? "border-b-2 border-sky-800"
               : "border-gray-300"
           }`}
         >
@@ -51,9 +67,7 @@ function Dashboard() {
         <button
           onClick={() => setActive("onwer")}
           className={` ${
-            active === "onwer"
-              ? "border-b-2 border-indigo-500/100"
-              : "border-gray-300"
+            active === "onwer" ? "border-b-2 border-sky-800" : "border-gray-300"
           }`}
         >
           Onwer Project
@@ -68,7 +82,7 @@ function Dashboard() {
               {talentProject.map((item) => (
                 <li
                   key={item.id}
-                  className="py-2 px-4 my-2 rounded-lg bg-blue-500 text-white"
+                  className="py-2 px-4 my-2 rounded-lg bg-sky-800 text-white"
                 >
                   <div className="flex justify-between">
                     <p>{item.projectName}</p>
@@ -89,7 +103,7 @@ function Dashboard() {
               {onwerProject.map((item) => (
                 <li
                   key={item.id}
-                  className="py-2 px-4 my-2 rounded-lg bg-blue-500 text-white"
+                  className="py-2 px-4 my-2 rounded-lg bg-sky-800 text-white"
                 >
                   <div className="flex justify-between">
                     <p>{item.projectName}</p>
