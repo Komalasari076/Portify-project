@@ -6,7 +6,8 @@ import Panduan from "./components/Main/Panduan";
 import ProjectList from "./components/Main/ProjectList";
 import ProjectDetail from "./components/Main/ProjectDetail";
 import Dashboard from "./components/Main/Dashboard";
-import HomePage from "./components/Main/HomePage";
+import HomePage from "./components/HomePage";
+import Persyaratan from "./components/Main/Persyaratan";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/project" element={<ProjectList />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/panduan" element={<Panduan />} />
+        <Route path="/persyaratan" element={<Persyaratan />} />
         <Route path="/login" element={<Login />} />
       </Routes>
 

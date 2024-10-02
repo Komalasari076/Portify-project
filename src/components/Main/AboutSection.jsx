@@ -1,19 +1,17 @@
 function AboutSection() {
   return (
-    <div className="p-5 font-medium text-base h-69">
-      <div className="text-center m-10">
+    <div className="p-5 font-medium h-69">
+      <div className="text-center bg-blue-100 rounded-md p-8">
         <p>
           Portify adalah platform yang menghubungkan talenta digital pemula
           dengan pengusaha atau organisasi yang membutuhkan produk digital. Di
           sini, kedua belah pihak bisa berkolaborasi secara gratis, memberikan
-          kesempatan bagi talenta untuk membangun portofolio mereka, sementara
-          pengusaha dan organisasi mendapat dukungan dalam mengembangkan usaha
-          mereka. Bersama, kita tumbuh melalui proyek-proyek nyata yang saling
-          menguntungkan
+          kesempatan bagi talenta untuk membangun portofolio, sementara
+          pengusaha dan organisasi mendapat dukungan dalam mengembangkan usaha.
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-16 my-10">
+      <div className="grid grid-cols-3 gap-16 mt-16">
         <div className="rounded-md bg-blue-100 border-2 border-sky-800">
           <h1 className="p-2 text-white bg-sky-800">
             Tingkatkan Portofolio Profesional
@@ -21,7 +19,7 @@ function AboutSection() {
           <p className="p-2">
             Dapatkan pengalaman nyata dan feedback langsung untuk membangun
             portofolio yang kredibel, menarik perhatian perusahaan tanpa
-            menggunakan proyek fiktif.
+            menggunakan fake project.
           </p>
         </div>
 

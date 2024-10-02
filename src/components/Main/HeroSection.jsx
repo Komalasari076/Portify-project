@@ -2,7 +2,7 @@ import logo from "../../assets/logo.png";
 
 function HeroSection() {
   return (
-    <div className="flex justify-beetween items-center font-medium text-base p-5 gap-x-32 h-96">
+    <div className="flex justify-beetween items-center gap-x-4 font-medium px-5 py-10 h-96">
       <div>
         <div className="mb-10 text-sky-800 text-lg">
           <h1>Empowering Portfolios, Enabling Businesses</h1>
@@ -12,10 +12,8 @@ function HeroSection() {
           <p>
             Jadilah talenta digital dengan kesempatan mengerjakan proyek-proyek
             nyata yang tidak hanya memperkuat portofoliomu, tetapi juga membantu
-            bisnis lokal dan komunitas berkembang. Dapatkan pengalaman langsung, feedback
-            berharga, dan buatlah dampak nyata melalui kontribusimu
-          </p><br />
-          <p>
+            bisnis lokal dan komunitas berkembang. Dapatkan pengalaman langsung,
+            feedback berharga, dan buatlah dampak nyata melalui kontribusimu.
             Ingin tahu caranya? Lihat panduan lengkap dan persyaratan untuk
             memulai
           </p>
@@ -31,8 +29,8 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="w-screen">
-        <img src={logo} alt="" />
+      <div className="w-full">
+        <img src={logo} alt="Logo Portify" />
       </div>
     </div>
   );

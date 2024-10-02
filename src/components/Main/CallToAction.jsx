@@ -4,7 +4,8 @@ function CallToAction() {
   return (
     <div className="flex justify-between items-center font-medium text-base p-5 gap-x-32 h-96">
       <div>
-        <h1 className="text-lg">Bantu Usaha Lokal dan Bangun Portofoliomu!</h1><br />
+        <h1 className="text-lg">Bantu Usaha Lokal dan Bangun Portofoliomu!</h1>
+        <br />
         <p className="mb-6">
           Mulail perjalananmu sebagai talenta digital dengan mengerjakan
           proyek-proyek nyata yang memberikan dampak langsung. Selain membangun
@@ -14,11 +15,13 @@ function CallToAction() {
           positif!
         </p>
 
-        <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">Lihat Proyek</button>
+        <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">
+          Lihat Proyek
+        </button>
       </div>
 
       <div className="w-full">
-        <img src={portofolio} alt="" />
+        <img src={portofolio} alt="Portfolio" />
       </div>
     </div>
   );

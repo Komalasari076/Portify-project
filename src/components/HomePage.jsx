@@ -1,6 +1,6 @@
-import AboutSection from "./AboutSection";
-import CallToAction from "./CallToAction";
-import HeroSection from "./HeroSection";
+import AboutSection from "./Main/AboutSection";
+import CallToAction from "./Main/CallToAction";
+import HeroSection from "./Main/HeroSection";
 
 function HomePage() {
     return(

@@ -15,22 +15,32 @@ function ProjectList() {
   useEffect(() => {
     getDataProject();
   }, []);
- 
+
   return (
-    <div>
-      <h1>Daftar Proyek</h1>
+    <div className="py-10 px-5 font-medium min-h-screen">
+      <h1 className="text-lg font-bold mb-5">Daftar Proyek</h1>
 
       <ul className="grid grid-cols-4 gap-8">
-        {projects.map((item) => (
-          <li
-            key={item.id}
-            className="rounded-md bg-blue-100 border-2 border-sky-800"
-          >
-            <Link to={`/projects/${item.id}`}>{item.projectName}</Link>
+        {projects.length == 0 ? (
+          <h1>Loading...</h1>
+        ) : (
+          projects.map((item) => (
+            <li
+              key={item.id}
+              className="rounded-md bg-blue-100 border-2 border-sky-800"
+            >
+              <Link to={`/projects/${item.id}`}>
+                <h1 className="p-2 text-white bg-sky-800">
+                  {item.projectName}
+                </h1>
+              </Link>
 
-            <p>Skills: {item.skillsRequired.join(", ")}</p>
-          </li>
-        ))}
+              <p className="p-2">
+                Skill yang dibutuhkan: <br /> {item.skillsRequired.join(" || ")}
+              </p>
+            </li>
+          ))
+        )}
       </ul>
     </div>
   );

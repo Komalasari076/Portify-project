@@ -18,13 +18,13 @@ function Navbar() {
           <Link to="/project">Projects</Link>
         </li>
 
-        <li className="hover:text-sky-800 transition duration-300 ease-in-out">
+        <li className="mr-10 hover:text-sky-800 transition duration-300 ease-in-out">
           <Link to="/panduan">Panduan</Link>
         </li>
 
-        {/* <li className="mr-10 hover:text-sky-800 transition duration-300 ease-in-out">
-          Syarat
-        </li> */}
+        <li className="hover:text-sky-800 transition duration-300 ease-in-out">
+          <Link to="/persyaratan">Persyaratan</Link>
+        </li>
       </div>
 
       <div>
