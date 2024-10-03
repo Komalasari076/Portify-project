@@ -1,16 +1,44 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+
+    if (password !== confirmPassword) {
+      alert("pasword dan corfirm password tidak sesuai");
+      return;
+    }
+
+    const user = { email, password };
+    localStorage.setItem("user", JSON.stringify(user));
+
+    const checkData = localStorage.getItem("user");
+    if (checkData) {
+      alert(
+        "Register Berhasil, silahkan login dengan akun yang sudah terdaftar"
+      );
+      navigate("/login");
+    }
+  };
+
   return (
     <div className="flex justify-center items-center h-screen font-medium">
       <div className="w-full max-w-md bg-blue-100 border-2 border-sky-800 p-10 rounded-lg">
         <h2 className="text-2xl font-bold text-center mb-6">Register</h2>
-        <form>
+        <form onSubmit={handleRegister}>
           <div className="my-4">
             <label className=" text-gray-900">Email</label>
             <input
               type="email"
               placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
               className="w-full p-1 rounded-md"
             />
@@ -21,6 +49,8 @@ function Register() {
             <input
               type="password"
               placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               required
               className="w-full p-1 rounded-md"
             />
@@ -31,6 +61,8 @@ function Register() {
             <input
               type="password"
               placeholder="Confirm Password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
               required
               className="w-full p-1 rounded-md"
             />

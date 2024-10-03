@@ -1,17 +1,37 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { json, Link, useNavigate } from "react-router-dom";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (user && user.email === email && user.password === password) {
+      alert("login berhasil");
+      navigate("/dashboard");
+    } else {
+      alert("email atau password salah");
+    }
+  };
+
   return (
     <>
       <div className="flex justify-center items-center h-screen font-medium">
         <div className="w-full max-w-md bg-blue-100 border-2 border-sky-800 p-10 rounded-lg">
           <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
-          <form>
+          <form onSubmit={handleLogin}>
             <div className="my-4">
               <label className=" text-gray-900">Email</label>
               <input
                 type="email"
                 placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
                 className="w-full p-1 rounded-md"
               />
@@ -22,6 +42,8 @@ function Login() {
               <input
                 type="password"
                 placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 required
                 className="w-full p-1 rounded-md"
               />
