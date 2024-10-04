@@ -1,22 +1,12 @@
 import { useEffect, useState } from "react";
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
+import { ProjectContext } from "../../../context/ProjectProvider"
 
 function ProjectDetail() {
   const { id } = useParams();
-  const [project, setProject] = useState(null);
-
-  useEffect(() => {
-    getProjectId();
-  }, [id]);
-
-  async function getProjectId() {
-    const respons = await fetch(
-      `https://66fb57208583ac93b40b758c.mockapi.io/projects/Projects/${id}`
-    );
-    const data = await respons.json();
-    setProject(data);
-    console.log(data);
-  }
+  const { projects } = useContext(ProjectContext);
+  const project = projects.find((project) => project.id === id);
 
   return (
     <div className="py-10 px-5 font-medium">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../../assets/logo.png";
 
 function HeroSection() {
   return (
@@ -16,7 +16,7 @@ function HeroSection() {
             bisnis lokal dan komunitas berkembang. Dapatkan pengalaman langsung,
             feedback berharga, dan buatlah dampak nyata melalui kontribusimu.
             Ingin tahu caranya? Lihat panduan lengkap dan persyaratan untuk
-            memulai
+            memulai!
           </p>
         </div>
 

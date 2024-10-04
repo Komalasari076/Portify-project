@@ -1,23 +1,20 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "./Header/Navbar";
-import Footer from "./Footer/Footer";
+import Navbar from "./components/Header/Navbar";
+import Footer from "./components/Footer/Footer";
 
 function PageTemplate() {
   return (
     <>
-      {/* Navigasi */}
       <header>
-        <Navbar/>
+        <Navbar />
       </header>
 
-      {/* Konten sesuai dgn alamat */}
       <div>
         <Outlet />
       </div>
 
-      {/* Footer */}
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </>
   );

@@ -1,16 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
+import PageTemplate from "./PageTemplate";
+import HomePage from "./components/Main/Homepage/HomePage";
+import ProjectList from "./components/Main/Project/ProjectList";
+import ProjectDetail from "./components/Main/Project/ProjectDetail";
+import Persyaratan from "./components/Main/Project/Persyaratan";
+import Panduan from "./components/Main/Project/Panduan";
 import Login from "./components/Header/Login";
-import Navbar from "./components/Header/Navbar";
-import Panduan from "./components/Main/Panduan";
-import ProjectList from "./components/Main/ProjectList";
-import ProjectDetail from "./components/Main/ProjectDetail";
-import Dashboard from "./components/Main/Dashboard";
-import HomePage from "./components/HomePage";
-import Persyaratan from "./components/Main/Persyaratan";
 import Register from "./components/Header/Register";
-import Pengajuan from "./components/Main/Pengajuan";
-import PageTemplate from "./components/PageTemplate";
+import Dashboard from "./components/Main/Dashboard/Dashboard";
+import Pengajuan from "./components/Main/Dashboard/Pengajuan";
 
 function App() {
   return (

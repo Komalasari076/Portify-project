@@ -4,17 +4,17 @@ function AboutSection() {
       <div className="text-center bg-blue-100 rounded-md p-8">
         <p>
           Portify adalah platform yang menghubungkan talenta digital pemula
-          dengan pengusaha atau organisasi yang membutuhkan produk digital. Di
+          dengan pengusaha atau komunitas yang membutuhkan produk digital. Di
           sini, kedua belah pihak bisa berkolaborasi secara gratis, memberikan
-          kesempatan bagi talenta untuk membangun portofolio, sementara
-          pengusaha dan organisasi mendapat dukungan dalam mengembangkan usaha.
+          kesempatan bagi talent untuk membangun portofolio, sementara pengusaha
+          dan komunitas kecil mendapat dukungan dalam mengembangkan usahanya.
         </p>
       </div>
 
       <div className="grid grid-cols-3 gap-16 mt-16">
         <div className="rounded-md bg-blue-100 border-2 border-sky-800">
           <h1 className="p-2 text-white bg-sky-800">
-            Tingkatkan Portofolio Profesional
+            Upgrade Portofolio Profesional
           </h1>
           <p className="p-2">
             Dapatkan pengalaman nyata dan feedback langsung untuk membangun
@@ -25,12 +25,12 @@ function AboutSection() {
 
         <div className="rounded-md bg-blue-100 border-2 border-sky-800">
           <h1 className="p-2 text-white bg-sky-800">
-            Dukung UMKM dan Organisasi
+            Dukung UMKM dan komunitas
           </h1>
           <p className="p-2">
-            Bantu UMKM dan organisasi mendapatkan solusi digital berkualitas
-            tanpa biaya besar, sambil memberikan talenta kesempatan untuk
-            berkembang.
+            Bantu UMKM dan komunitas kecil mendapatkan solusi digital
+            berkualitas tanpa biaya besar, sambil memberikan talent kesempatan
+            untuk berkembang.
           </p>
         </div>
 
@@ -39,8 +39,9 @@ function AboutSection() {
             Kolaborasi yang Saling Menguntungkan
           </h1>
           <p className="p-2">
-            Kolaborasi ini memberi manfaat ganda: talenta mengembangkan karier,
-            sementara pengusaha menerima dukungan digital tanpa biaya tinggi.
+            Kolaborasi ini memberi manfaat ganda. talent dapat mengembangkan
+            kariernya, sementara pengusaha dan komunitas kecil menerima dukungan
+            digital tanpa biaya tinggi.
           </p>
         </div>
       </div>

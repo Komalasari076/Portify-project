@@ -37,19 +37,23 @@ function Persyaratan() {
             <div>
               <ol>
                 <li>
-                  1. Mengunggah sampel proyek atau karya yang relevan dengan
-                  bidang keahlian
-                </li>
-                <li>2. Berkomitmen untuk menyelesaikan proyek tepat waktu</li>
-                <li>
-                  3. Bersedia menerima dan merespon feedback dari owner atau
-                  klien
+                  &#x2713; Mengunggah sampel proyek atau karya yang relevan
+                  dengan bidang keahlian
                 </li>
                 <li>
-                  4. Menjaga komunikasi yang baik selama proyek berlangsung
+                  &#x2713; Berkomitmen untuk menyelesaikan proyek tepat waktu
                 </li>
                 <li>
-                  5. Menyepakati syarat dan ketentuan yang berlaku di platform
+                  &#x2713; Bersedia menerima dan merespon feedback dari owner
+                  atau klien
+                </li>
+                <li>
+                  &#x2713; Menjaga komunikasi yang baik selama proyek
+                  berlangsung
+                </li>
+                <li>
+                  &#x2713; Menyepakati syarat dan ketentuan yang berlaku di
+                  platform
                 </li>
               </ol>
             </div>
@@ -61,32 +65,36 @@ function Persyaratan() {
             <div>
               <ul>
                 <li>
-                  1. Melakukan verifikasi usaha atau komunitas melalui platform
+                  &#x2713; Melakukan verifikasi usaha atau komunitas melalui
+                  platform
                 </li>
                 <li>
-                  2. Usaha atau komunitas masih dalam tahap awal atau sedang
-                  berkembang
+                  &#x2713; Usaha atau komunitas masih dalam tahap awal atau
+                  sedang berkembang
+                </li>
+                {/* <li>
+                  &#x2713; Jika usaha dan komunitas sudah berkembang atau
+                  profesional, akan ada fitur kolaborasi antar talent untuk
+                  bekerja sama pada proyek yang lebih kompleks dan ini berbayar.
+                </li> */}
+                <li>
+                  &#x2713; Proyek yang diajukan sebaiknya sederhana dan tidak
+                  terlalu rumit
                 </li>
                 <li>
-                  3. Jika usaha dan komunitas sudah berkembang atau profesional, akan ada fitur
-                  kolaborasi antar talent untuk bekerja sama pada proyek yang
-                  lebih kompleks dan ini berbayar.
+                  &#x2713; Menyiapkan deskripsi proyek yang jelas dan terperinci
                 </li>
                 <li>
-                  4. Proyek yang diajukan sebaiknya sederhana dan tidak terlalu
-                  rumit
-                </li>
-                <li>5. Menyiapkan deskripsi proyek yang jelas dan terperinci</li>
-                <li>
-                  6. Memberikan feedback yang jujur dan konstruktif setelah proyek
-                  selesai
+                  &#x2713; Memberikan feedback yang jujur dan konstruktif
+                  setelah proyek selesai
                 </li>
                 <li>
-                  7. Memastikan komunikasi terbuka dan mendukung kolaborasi dengan
-                  talent
+                  &#x2713; Memastikan komunikasi terbuka dan mendukung
+                  kolaborasi dengan talent
                 </li>
                 <li>
-                  8. Menyepakati syarat dan ketentuan yang berlaku di platform
+                  &#x2713; Menyepakati syarat dan ketentuan yang berlaku di
+                  platform
                 </li>
               </ul>
             </div>

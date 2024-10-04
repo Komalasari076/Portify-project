@@ -1,27 +1,16 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useContext } from "react"; // Correct import of useContext
 import { Link } from "react-router-dom";
+import { ProjectContext } from "../../../context/ProjectProvider"
 
 function ProjectList() {
-  const [projects, setProject] = useState([]);
-
-  async function getDataProject() {
-    let URL = "https://66fb57208583ac93b40b758c.mockapi.io/projects/Projects";
-    const respons = await fetch(URL);
-    const result = await respons.json();
-    setProject(result);
-  }
-
-  useEffect(() => {
-    getDataProject();
-  }, []);
+  const { projects } = useContext(ProjectContext);
 
   return (
     <div className="py-10 px-5 font-medium min-h-screen">
-      <h1 className="text-lg font-bold mb-5">Daftar Proyek</h1>
+      <h1 className="text-lg font-bold mb-5">Daftar Project</h1>
 
       <ul className="grid grid-cols-4 gap-8">
-        {projects.length == 0 ? (
+        {projects.length === 0 ? (
           <h1>Loading...</h1>
         ) : (
           projects.map((item) => (

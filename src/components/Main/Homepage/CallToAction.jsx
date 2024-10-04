@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import portofolio from "../../assets/Desain tanpa judul.png";
+import portofolio from "../../../assets/portfolio.png";
 
 function CallToAction() {
   return (
@@ -11,13 +11,13 @@ function CallToAction() {
           Mulail perjalananmu sebagai talenta digital dengan mengerjakan
           proyek-proyek nyata yang memberikan dampak langsung. Selain membangun
           portofolio profesional, kamu juga berkontribusi dalam mengembangkan
-          UMKM dan komunitas dengan solusi digital yang mereka butuhkan. Gabung
-          Sekarang dan tunjukkan keterampilanmu sambil menciptakan perubahan
-          positif!
+          UMKM dan komunitas kecil dengan solusi digital yang mereka butuhkan.
+          Gabung Sekarang dan tunjukkan keterampilanmu sambil menciptakan
+          perubahan positif!
         </p>
 
         <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">
-          <Link to="/project">Lihat Proyek</Link>
+          <Link to="/project">Lihat Project</Link>
         </button>
       </div>
 
