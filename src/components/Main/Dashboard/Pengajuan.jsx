@@ -1,31 +1,35 @@
-import { useState } from "react";
-import { json, Link, useNavigate } from "react-router-dom";
+import { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { ProjectContext } from "../../../context/ProjectProvider";
 
-function Pengajuan({ addProject }) {
+function Pengajuan() {
+  const { addProject } = useContext(ProjectContext);
   const [namaProject, setNamaProject] = useState("");
   const [namaPengusaha, setNamaPengusaha] = useState("");
   const [deskripsi, setDeskripsi] = useState("");
   const [skills, setSkills] = useState("");
   const navigate = useNavigate();
 
-  const handlePengajuan = (e) => {
+  const handlePengajuan = async (e) => {
     e.preventDefault();
 
+    console.log("Nama Project:", namaProject);
+    console.log("Nama Pengusaha:", namaPengusaha);
+    console.log("Deskripsi:", deskripsi);
+    console.log("Skills:", skills);
+
     const newProject = {
-      id: Date.now(),
-      namaProject,
-      namaPengusaha,
-      deskripsi,
-      skills: skills.split(", ").map((skills) => skills.trim()),
+      projectName: namaProject,
+      businessOwner: namaPengusaha,
+      description: deskripsi,
+      skillsRequired: skills.split(", ").map((skills) => skills.trim()),
     };
 
-    if (newProject) {
-      alert("Project berhasil di tambahkan")
-      navigate("/dashboard");
-    }
+    console.log("New Project Data: ", newProject);
 
-    addProject(newProject);
-    
+    alert("Project berhasil di tambahkan");
+    await addProject(newProject);
+    navigate("/project");
   };
 
   return (

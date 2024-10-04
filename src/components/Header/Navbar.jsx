@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import { useEffect, useState } from "react";
 
 function Navbar() {
   return (

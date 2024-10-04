@@ -25,8 +25,6 @@ function Dashboard() {
           </Link>
         </div>
 
-        <h1 className="text-xl">Dashboard</h1>
-
         <div>
           <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-sky-800 hover:text-white mr-2">
             <a
@@ -43,12 +41,13 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="text-center my-16">
+      <div className="text-center my-12">
+        <h1 className="text-2xl mb-3">Dashboard</h1>
         <p>
-          Di sini, kamu bisa melihat riwayat proyekmu, baik proyek yang sedang
-          kamu kerjakan atau yang kamu ajukan ke orang lain. Jangan lupa untuk
-          membaca panduan dan persyaratan terlebih dahulu sebelum mengerjakan
-          proyek atau verifikasi untuk mengajukan proyek.
+          Di sini, kamu bisa melihat riwayat proyekmu, baik proyek yang sudah
+          kamu kerjakan atau yang kamu ajukan ke orang lain. <br /> Jangan lupa
+          untuk membaca panduan dan persyaratan terlebih dahulu sebelum
+          mengerjakan proyek atau verifikasi untuk mengajukan proyek.
         </p>
       </div>
 
