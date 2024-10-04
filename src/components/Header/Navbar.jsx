@@ -3,6 +3,18 @@ import logo from "../../assets/logo.png";
 import { useEffect, useState } from "react";
 
 function Navbar() {
+  const [login, setLogin] = useState(false);
+
+  useEffect(() => {
+    const userEmail = localStorage.getItem("email");
+    localStorage.setItem("email", userEmail);
+    if (userEmail) {
+      setLogin(true);
+    } else {
+      setLogin(false);
+    }
+  }, []);
+
   return (
     <div className="flex justify-between items-center text-lg font-bold p-5 border-b-2 border-slate-200">
       <div className="flex">
@@ -29,9 +41,15 @@ function Navbar() {
       </div>
 
       <div>
-        <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">
-          <Link to="/login">Login</Link>
-        </button>
+        {login ? (
+          <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">
+            <Link to="/dashboard">Dashboard</Link>
+          </button>
+        ) : (
+          <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">
+            <Link to="/login">Login</Link>
+          </button>
+        )}
       </div>
     </div>
   );
