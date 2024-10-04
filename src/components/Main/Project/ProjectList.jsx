@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ProjectContext } from "../../../context/ProjectProvider";
 
@@ -25,7 +25,7 @@ function ProjectList() {
               </Link>
 
               <p className="p-2">
-                Skill yang dibutuhkan: <br /> {item.skillsRequired}
+                Skill yang dibutuhkan: <br /> {item.skillsRequired.join(" || ")}
               </p>
             </li>
           ))

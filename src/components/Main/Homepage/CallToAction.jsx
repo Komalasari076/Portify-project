@@ -16,7 +16,7 @@ function CallToAction() {
           perubahan positif!
         </p>
 
-        <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300">
+        <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-sky-800 hover:text-white">
           <Link to="/project">Lihat Project</Link>
         </button>
       </div>

@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
-import { ProjectContext } from "../../../context/ProjectProvider"
+import { ProjectContext } from "../../../context/ProjectProvider";
 
 function ProjectDetail() {
   const { id } = useParams();
@@ -9,7 +8,7 @@ function ProjectDetail() {
   const project = projects.find((project) => project.id === id);
 
   return (
-    <div className="py-10 px-5 font-medium">
+    <div className="py-10 px-5 font-medium min-h-screen">
       {project == null ? (
         <h1>Loading...</h1>
       ) : (
@@ -24,8 +23,14 @@ function ProjectDetail() {
             {project.skillsRequired.join(" || ")}
           </p>
 
-          <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-blue-300 mt-4">
-            Kerjakan Project
+          <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-sky-800 hover:text-white mt-4">
+            <a
+              href={project.recruitmentFormLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Kerjakan Project
+            </a>
           </button>
         </div>
       )}

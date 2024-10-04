@@ -72,11 +72,11 @@ function Persyaratan() {
                   &#x2713; Usaha atau komunitas masih dalam tahap awal atau
                   sedang berkembang
                 </li>
-                {/* <li>
+                <li>
                   &#x2713; Jika usaha dan komunitas sudah berkembang atau
                   profesional, akan ada fitur kolaborasi antar talent untuk
                   bekerja sama pada proyek yang lebih kompleks dan ini berbayar.
-                </li> */}
+                </li>
                 <li>
                   &#x2713; Proyek yang diajukan sebaiknya sederhana dan tidak
                   terlalu rumit

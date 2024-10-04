@@ -8,6 +8,7 @@ function Pengajuan() {
   const [namaPengusaha, setNamaPengusaha] = useState("");
   const [deskripsi, setDeskripsi] = useState("");
   const [skills, setSkills] = useState("");
+  const [linkForm, setLinkForm] = useState("");
   const navigate = useNavigate();
 
   const handlePengajuan = async (e) => {
@@ -17,12 +18,14 @@ function Pengajuan() {
     console.log("Nama Pengusaha:", namaPengusaha);
     console.log("Deskripsi:", deskripsi);
     console.log("Skills:", skills);
+    console.log("linkForm:", linkForm);
 
     const newProject = {
       projectName: namaProject,
       businessOwner: namaPengusaha,
       description: deskripsi,
       skillsRequired: skills.split(", ").map((skills) => skills.trim()),
+      recruitmentFormLink: linkForm,
     };
 
     console.log("New Project Data: ", newProject);
@@ -63,7 +66,7 @@ function Pengajuan() {
           </div>
 
           <div className="flex flex-col my-4">
-            <label className=" text-gray-900 mb-1">Deskripsi</label>
+            <label className=" text-gray-900 mb-1">Deskripsi Project</label>
             <textarea
               placeholder="contoh: Kami membutuhkan copywriter pemula untuk membuat 5 konten singkat (sekitar 100 kata per konten) yang akan digunakan untuk kampanye media sosial. Fokus pada mempromosikan produk-produk UMKM kami yang ramah lingkungan, seperti tas belanja dan botol minum dari bahan daur ulang."
               value={deskripsi}
@@ -76,9 +79,21 @@ function Pengajuan() {
           <div className="flex flex-col my-4">
             <label className=" text-gray-900 mb-1">Skill yang Dibutuhkan</label>
             <textarea
-              placeholder="Pisahkan dengan koma, contoh: Penulisan kreatif dasar, Kemampuan dasar dalam riset produk, Pengetahuan dasar tentang media sosial, Komunikasi yang baik"
+              placeholder="Pisahkan dengan koma. contoh: Penulisan kreatif dasar, Kemampuan dasar dalam riset produk, Pengetahuan dasar tentang media sosial, Komunikasi yang baik"
               value={skills}
               onChange={(e) => setSkills(e.target.value)}
+              required
+              className="w-full p-2 rounded-md"
+            />
+          </div>
+
+          <div className="flex flex-col my-4">
+            <label className=" text-gray-900 mb-1">Link Form Google</label>
+            <input
+              type="text"
+              placeholder="Link form google untuk rekrutmen"
+              value={linkForm}
+              onChange={(e) => setLinkForm(e.target.value)}
               required
               className="w-full p-2 rounded-md"
             />

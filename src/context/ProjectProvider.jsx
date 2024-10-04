@@ -19,8 +19,6 @@ export function ProjectProvider({ children }) {
   async function addProject(newProject) {
     let URL = "https://66fb57208583ac93b40b758c.mockapi.io/projects/Projects";
 
-    console.log("Sending data to API: ", newProject);
-
     const respons = await fetch(URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -28,12 +26,8 @@ export function ProjectProvider({ children }) {
     });
 
     const data = await respons.json();
-    console.log("Response from API:", data);
-
     if (respons.ok) {
       setProject((project) => [...project, data]);
-    } else {
-      console.log("project gagal di tambahkan");
     }
   }
 

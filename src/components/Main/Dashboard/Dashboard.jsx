@@ -16,8 +16,8 @@ function Dashboard() {
   ];
 
   return (
-    <div className="font-medium px-5">
-      <div className="flex justify-between items-center gap-x-4 py-10 min-h-full">
+    <div className="font-medium p-5">
+      <div className="flex justify-between items-center">
         <div className="flex">
           <img src={logo} alt="Logo" width={40} />
           <Link to="/">
@@ -25,7 +25,7 @@ function Dashboard() {
           </Link>
         </div>
 
-        <div>
+        <div className="text-lg">
           <button className="rounded-full bg-blue-100 border-2 border-sky-800 py-1 px-4 hover:bg-sky-800 hover:text-white mr-2">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLScTIyIPPDSCyXkfCLFoGh8DX5R0G4vORCavW_iSP4dUMCN1vg/viewform"
@@ -41,13 +41,13 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="text-center my-12">
+      <div className="text-center my-14 px-10">
         <h1 className="text-2xl mb-3">Dashboard</h1>
         <p>
           Di sini, kamu bisa melihat riwayat proyekmu, baik proyek yang sudah
-          kamu kerjakan atau yang kamu ajukan ke orang lain. <br /> Jangan lupa
-          untuk membaca panduan dan persyaratan terlebih dahulu sebelum
-          mengerjakan proyek atau verifikasi untuk mengajukan proyek.
+          kamu kerjakan atau yang kamu ajukan ke orang lain. Jangan lupa untuk
+          membaca panduan dan persyaratan terlebih dahulu sebelum mengerjakan
+          proyek atau verifikasi untuk mengajukan proyek.
         </p>
       </div>
 
@@ -83,10 +83,7 @@ function Dashboard() {
                   key={item.id}
                   className="py-2 px-4 my-2 rounded-lg bg-sky-800 text-white"
                 >
-                  <div className="flex justify-between">
-                    <p>{item.projectName}</p>
-                    <p>Selesai</p>
-                  </div>
+                  <p>{item.projectName}</p>
                 </li>
               ))}
             </ul>
@@ -104,10 +101,7 @@ function Dashboard() {
                   key={item.id}
                   className="py-2 px-4 my-2 rounded-lg bg-sky-800 text-white"
                 >
-                  <div className="flex justify-between">
-                    <p>{item.projectName}</p>
-                    <p>Selesai</p>
-                  </div>
+                  <p>{item.projectName}</p>
                 </li>
               ))}
             </ul>
